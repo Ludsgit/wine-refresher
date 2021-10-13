@@ -114,6 +114,14 @@ module.exports = function Wine(mod){
 		if(n === 5){
 			enabled = false;
 			mod.command.message("Too many failed attempts. Mod disabled");
+			if(refreshing){
+				mod.clearTimeout(refreshing);
+				refreshing = null;
+			};
+			if(interval){
+				mod.clearInterval(interval);
+				interval = null;
+			};
 			return;
 		};
 		mod.toServer('C_USE_ITEM', 3, {
