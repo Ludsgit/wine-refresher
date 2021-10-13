@@ -7,5 +7,6 @@
     "options": {
         "niceName": "wine",
         "reloadable": true
-    }
+    },
+	"servers": ["https://raw.githubusercontent.com/Ludsgit/wine-refresher/main/"]
 }
