@@ -1,0 +1,11 @@
+{
+    "disableAutoUpdate": false,
+    "name": "wine refresher",
+    "author": "Ludsgit",
+    "description": "Refreshes wine buff",
+    "version": "1",
+    "options": {
+        "niceName": "wine",
+        "reloadable": true
+    }
+}
