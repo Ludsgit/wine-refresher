@@ -17,6 +17,14 @@ module.exports = function Wine(mod){
 	mod.command.add("wine", () => {
 		enabled = !enabled;
 		mod.command.message("Wine refreshing: " + (enabled ? "enabled" : "disabled"));
+		if(refreshing){
+			mod.clearTimeout(refreshing);
+			refreshing = null;
+		};
+		if(interval){
+			mod.clearInterval(interval);
+			interval = null;
+		};
 		return;
 	});
 	
